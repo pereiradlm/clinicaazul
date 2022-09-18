@@ -7,36 +7,62 @@
     <title>Clinica Azul</title>
 
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
 
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <a href="#"><img class="logo" src="img/logo.svg" alt="Logo Clinica Azul"></a> 
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">INSTITUCIONAL</a></li>
+                    <li><a href="#">ESPECIALIDADES</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="contenedor">
-        <header>
-            <img class="logo" src="img/logo.svg" alt="Logo Clinica Azul">
-            <div class="navbar">
-                <span>INICIO</span>
-                <span>INSTITUCIONAL</span>
-                <span>ESPECIALIDADES</span>
-                <span>SERVICIOS</span>
-                <span>PREGUNTAS FRECUENTES</span>
-                <span>CONTACTO</span>
-            </div>
-            
-        </header>
-        <main>
+        
+        <aside class="item izq">
+            <b>Panel a la izquierda</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ea!</p>
+        </aside>
+        <main class="item contenido">
             <div>
-                <p>Contenido Principal</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, autem eos. Est nihil nesciunt, ullam suscipit nisi repudiandae quae corrupti!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam saepe veritatis illum soluta at porro quo sint, doloremque adipisci voluptatem maiores quia? Quaerat eaque repellat nam officiis, tempora at minus!</p>
+                <b>Contenido Principal</b>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, autem eos. Est nihil nesciunt, ullam suscipit nisi repudiandae quae corrupti!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam saepe veritatis illum soluta at porro quo sint, doloremque adipisci voluptatem maiores quia? Quaerat eaque repellat nam officiis, tempora at minus!</p>
+            
+                </article>
+                
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, autem eos. Est nihil nesciunt, ullam suscipit nisi repudiandae quae corrupti!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam saepe veritatis illum soluta at porro quo sint, doloremque adipisci voluptatem maiores quia? Quaerat eaque repellat nam officiis, tempora at minus!</p>
+            
+                </article>
+
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, autem eos. Est nihil nesciunt, ullam suscipit nisi repudiandae quae corrupti!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam saepe veritatis illum soluta at porro quo sint, doloremque adipisci voluptatem maiores quia? Quaerat eaque repellat nam officiis, tempora at minus!</p>
+            
+                </article>
             </div>
         </main>
-        <aside>
+        <aside class="item der">
             <div>
-                <p>Aside</p>
+                <b>Panel a la derecha</b>
                 <p>contenido</p>
             </div>
         </aside>
-        <footer>
+        <footer class="item pie">
             <div>
                 <p>Datos del footer</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, rerum illo natus voluptas iste necessitatibus?</p>
