@@ -85,9 +85,6 @@ body {
         /* Distribuimos el contenido en cada fila */
         grid-template-areas: "izq" "contenido" "der" "pie";
     }
-    .logo {
-        width: 50px;
-        margin: 5px;
-    }
+
 }
 

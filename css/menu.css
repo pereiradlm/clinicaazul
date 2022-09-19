@@ -11,6 +11,7 @@
 	z-index:1000;
 	top:0;
     width: 100vw;
+    height: 100px;
 }
 
 .navbar nav {
@@ -40,7 +41,7 @@
 }
 
 .logo {
-    width: 80px;
+    width: 40%;
     margin: 10px;
 }
 
@@ -54,9 +55,10 @@ header img {
 
 header label {
 	float: right;
-	font-size: 50px;
-	margin: 6px 0;
+	font-size: 45px;
+	margin: 10px;
 	cursor: pointer;
+    vertical-align: middle;
 }
 
 .menu {
@@ -76,7 +78,7 @@ header label {
 	height: 50px;
 	text-decoration: none;
 	padding: 15px;
-	border-bottom: 1px solid rgba(255,255,255,0.5); 
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5); 
 }
 
 .menu li:hover {
@@ -85,6 +87,13 @@ header label {
 
 #menu-bar:checked ~ .menu {
 	transform: translateX(0%);
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+
 }
 
 @media (min-width:1024px) {
