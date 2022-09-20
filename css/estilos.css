@@ -18,8 +18,9 @@ body {
 
     /* Distribuimos el contenido en cada fila */
     grid-template-areas:  
-                         "izq contenido der" 
-                         "pie pie pie";
+                        "banner banner banner"
+                        "izq contenido der" 
+                        "pie pie pie";
 
     /* separamos los items con gap */
     gap: 2%;
@@ -58,6 +59,11 @@ body {
     background-color: lightblue;
 }
 
+.banner{
+    grid-area: banner;
+    height: 45vh;
+    position: relative;
+}
 
 
 /*----------------------------------------------------------------*/
