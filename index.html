@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
-
 </head>
 <body>
     <header>
@@ -28,53 +27,41 @@
             </nav>
         </div>
     </header>
-    <div class="item banner">
-        <ul class="diapositivas">
-            <li class="diapositiva" id="diapositiva1">
-                <a href="#">
-                    <p class="leyenda">Especialidades</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Especialidades">
-                </a>
-            </li>
-            <li class="diapositiva" id="diapositiva2">
-                <a href="#">
-                    <p class="leyenda">Servicios</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Servicios">
-                </a>
-            </li>
-            <li class="diapositiva" id="diapositiva3">
-                <a href="#">
-                    <p class="leyenda">Laboratorio</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Laboratorio">
-                </a>
-            </li>
-            <li class="diapositiva" id="diapositiva4">
-                <a href="#">
-                    <p class="leyenda">Turnos Online</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Turnos Online">
-                </a>
-            </li>
-            <li class="diapositiva" id="diapositiva5">
-                <a href="#">
-                    <p class="leyenda">Contáctenos</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Contáctenos">
-                </a>
-            </li>
-            <li class="diapositiva">
-                <a href="#">
-                    <p class="leyenda">Especialidades</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Especialidades">
-                </a>
-            </li>
-        </ul>
-        <ul class="diapositivas-control">
-            <li><a href="#diapositiva1">&bullet;</a></li>
-            <li><a href="#diapositiva2">&bullet;</a></li>
-            <li><a href="#diapositiva3">&bullet;</a></li>
-            <li><a href="#diapositiva4">&bullet;</a></li>
-            <li><a href="#diapositiva5">&bullet;</a></li>
-        </ul>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Especialidades" style="width:100%">
+          <div class="text">Especialidades</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Servicios" style="width:100%">
+          <div class="text">Servicios</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Medical_Care.jpg" alt="Turnos Online" style="width:100%">
+          <div class="text">Turnos Online</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
     </div>
+    <br>
+        
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <script src="js/script.js"></script>
+
+        
     <div class="contenedor">
         <aside class="item izq">
             <b>Panel a la izquierda</b>
