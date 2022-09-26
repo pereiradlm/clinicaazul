@@ -5,64 +5,47 @@
     flex-wrap: wrap;
     background-color: white;
     justify-content:space-between;
-    align-content: center;
+    align-content:stretch;
 	margin:auto;
     position:fixed;
 	z-index:1000;
 	top:0;
     width: 100vw;
     height: 100px;
+	
 }
 
-.navbar nav {
-    margin:auto;
-    text-align: center;
-}
-
-.navbar nav ul {
-	list-style: none;
-}
-
-.navbar nav ul li {
-    float: left;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.navbar nav ul li a {
-	display: block;
-	padding:10px;
-	color:#333;
-	text-decoration: none;
-}
-
-.navbar nav ul li a:hover {
-	background: lightblue;
+.logositio{
+	order: 1;
 }
 
 .logo {
-    width: 40%;
-    margin: 10px;
+    width: 5rem;
+    margin: 1rem 1rem;
+	
 }
 
 #menu-bar {
 	display: none;
 }
 
-header img {
-	vertical-align: baseline;
+header label {
+	cursor: pointer;
 }
 
-header label {
-	float: right;
-	font-size: 45px;
-	margin: 10px;
-	cursor: pointer;
-    vertical-align: middle;
+.logomenu {
+	order: 3;
+	font-size: 4rem;
+	margin: 1rem 1rem;
+	color: #AAA;
 }
 
 .menu {
+	order: 2;
+	display: flex;
 	position: absolute;
+	margin:auto;
+    text-align: center;
 	top: 100px;
 	left: 0;
 	width: 100%;
@@ -70,6 +53,17 @@ header label {
 	background: rgba(255, 255, 255, 0.9);
 	transition: all 0.5s;
 	transform: translateX(-100%);
+	flex-wrap: wrap;
+}
+
+nav {
+	width: 100%;
+}
+
+.menu ul {
+	list-style: none;
+	width: 100%;
+	
 }
 
 .menu li {
@@ -77,12 +71,22 @@ header label {
 	color: #fff;
 	height: 50px;
 	text-decoration: none;
-	padding: 15px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5); 
+	
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	float: left;
+    padding: 5px;
+    margin-top: 1rem;
 }
 
-.menu li:hover {
-	background: rgba(255,255,255,0.3);
+.menu ul li a {
+	display: block;
+	padding:10px;
+	color:#333;
+	text-decoration: none;
+}
+
+.menu li a:hover {
+	background: lightblue;
 }
 
 #menu-bar:checked ~ .menu {
@@ -92,9 +96,30 @@ header label {
 @media only screen and (max-width: 600px) {
     .menu {
         flex-direction: column;
+		flex-grow: 5;
+		display: inline;
     }
 
+	.menu li {
+		float: none;
+		
+	}
+
+	.logositio {
+		order: 1;
+	}
+
+	.logomenu {
+		order: 2;
+	}
+
+	.menu {
+		order: 3;
+	}
+
 }
+
+
 
 @media (min-width:1024px) {
 	
