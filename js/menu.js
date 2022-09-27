@@ -8,3 +8,19 @@ function mostrarMenu() {
       document.getElementById('seccionmenu').style.transform = "translateX(-100%)"; 
    }
 }
+
+function cargarContenido(url) {
+   let contenedor = document.getElementById('principal')
+
+   fetch(url)
+   .then(response=> response.text())
+   .then(text=> contenedor.innerHTML = text)
+
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+   cargarContenido('./home.html');
+ });
+
+//document.onload(cargarContenido('./home.html'))
+

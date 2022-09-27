@@ -40,11 +40,15 @@ body {
 
 .contenido {
     grid-area: contenido;
-    text-align: center;
+    text-align: justify;
 }
 
 .contenido article {
     padding-bottom: 25px;
+}
+
+.contenido p {
+	padding: 10px 0px 10px 0px;
 }
 
 .pie {
@@ -58,6 +62,20 @@ body {
     background-color: lightblue;
 }
 
+.destacado {
+	font-size: 1.5rem;
+}
+
+.foto {
+	display: block;
+	margin:auto;
+	text-align: center;
+	width: 90%;
+}
+
+.piefoto {
+	text-align: center;
+}
 /*----------------------------------------------------------------*/
 /* Inicio Configuración para el banner                                   */
 /*----------------------------------------------------------------*/
