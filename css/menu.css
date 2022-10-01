@@ -3,16 +3,16 @@
 .navbar{
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
     justify-content:space-between;
     align-content:stretch;
 	margin:auto;
     position:fixed;
 	z-index:1000;
 	top:0;
-    width: 100vw;
+	left: 0;
+    width: 100%;
     height: 100px;
-	
 }
 
 .logositio{
@@ -35,8 +35,8 @@ header label {
 
 .logomenu {
 	order: 3;
-	font-size: 4rem;
-	margin: 1rem 1rem;
+	font-size: 3rem;
+	margin: 1.5rem 1rem;
 	color: #AAA;
 }
 
@@ -93,6 +93,36 @@ nav {
 	transform: translateX(0%);
 }
 
+/* menu lateral izquierda */
+.botonlateral {
+	padding: 1.5rem;
+	background-color: rgba(0,0,255,0.5);
+	text-align: center;
+	border-radius: 0.5rem;
+	margin: 0.5rem;
+	color: white;
+	text-decoration: none;
+}
+
+.botonlateral:hover {
+	background-color: rgba(0,0,255,0.3);
+}
+
+.botonlateral i {
+	padding: 1rem;
+	margin: 0.7rem;
+	font-size: 3rem;
+}
+
+.botonlateral a:link {
+	color: white;
+}
+
+.botonlateral a:visited {
+	color: white;
+}
+
+
 @media only screen and (max-width: 600px) {
     .menu {
         flex-direction: column;
@@ -117,6 +147,11 @@ nav {
 		order: 3;
 	}
 
+	.izq {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
 }
 
 
@@ -138,6 +173,12 @@ nav {
 	
 	header label {
 		display: none;
+	}
+	
+	.botonlateral i {
+		padding: 0;
+		margin: 0.5rem;
+		font-size: 2rem;
 	}
 	
 }

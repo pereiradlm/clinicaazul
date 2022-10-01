@@ -1,14 +1,21 @@
 @import url("menu.css");
+@import url("footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lato&display=swap');
+
+/* font-family: 'Cinzel', serif;
+font-family: 'Lato', sans-serif; */
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+	font-family: 'Lato', sans-serif;
 }
 
 body {
     width: 98%;
     margin: auto;
+	background: linear-gradient(90deg, rgba(150,150,150,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(150,150,150,1) 100%);
 }
 
 .contenedor {
@@ -27,12 +34,16 @@ body {
     justify-content: center;
     align-content: start;
 
-    margin-top: 100px;
+    margin-top: 110px;
 }
 
 .izq {
     grid-area: izq;
+	display: flex;
+	flex-direction: column;
 }
+
+
 
 .der{
     grid-area: der;
@@ -59,11 +70,14 @@ body {
 .item {
     padding: 5%;
     color: #333;
-    background-color: lightblue;
+    background-color: rgba(255,255,255,0.3);
+	border-radius: 1rem;
 }
 
+/* Texto destacado, titulos y parrafos */
 .destacado {
 	font-size: 1.5rem;
+	font-family: 'Cinzel', serif;
 }
 
 .foto {
@@ -104,6 +118,7 @@ img {vertical-align: middle;}
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
+	background-color: rgba(255,255,255,0.5);
 }
 
 .next {
@@ -123,6 +138,7 @@ img {vertical-align: middle;}
 	bottom: 8px;
 	width: 100%;
 	text-align: center;
+	background-color: rgba(255,255,255,0.5);
 }
 
 .numbertext {
@@ -173,7 +189,7 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 800px) {
     .contenedor { 
         /* Uso un atajo para definir 4 filas / 2 columna */
-        grid-template: auto auto 60px / 30% auto; 
+        grid-template: auto auto auto / 30% auto; 
 
         /* Distribuimos el contenido en cada fila */
         grid-template-areas: "izq contenido" "der der" "pie pie";
@@ -187,7 +203,7 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 600px) {
     .contenedor {
         /* Uso un atajo para definir 6 filas / 1 columna */
-        grid-template: auto auto auto 60px / 100%; 
+        grid-template: auto auto auto auto / 100%; 
 
         /* Distribuimos el contenido en cada fila */
         grid-template-areas: "izq" "contenido" "der" "pie";

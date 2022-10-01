@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
+    <script src="https://kit.fontawesome.com/dd671f0f2a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -37,8 +38,17 @@
     <div class="contenedor">
         <aside class="item izq">
             <!-- Contenido del panel de la Izquierda -->
-            <b>Panel a la izquierda</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ea!</p>
+            <div class="botonlateral">
+                <a href="#"><i class="fa-solid fa-calendar-days fa-2xl"></i>TURNOS</a>
+            </div>
+            <div class="botonlateral">
+                <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+                <a href="https://wwww.facebook.com"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <div class="botonlateral">
+                <a href="#footer"><i class="fa-solid fa-map-location-dot fa-2xl"></i>Ubicación</a>
+            </div>
         </aside>
         <main id="principal" class="item contenido">
             <!-- Contenido principal del sitio -->
@@ -50,10 +60,31 @@
                 <p>contenido</p>
             </div>
         </aside>
-        <footer class="item pie">
-            <div>
-                <p>Datos del footer</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, rerum illo natus voluptas iste necessitatibus?</p>
+        <footer class="item pie" >
+            <div id="footer">
+                <div>
+                    <b class="destacado">CONTACTO</b> 
+                    <p>Calle Esperanza Nº 123,</p>
+                    <p>Esmeralda, Santa Fe, Arg.</p>
+                    <p>Teléfono: (123) 123-4567</p>
+                    <p>Conmutador: (123) 123-1122</p>
+                    <p>Email: clinicaazul@clinicaazul.com</p>
+                    <p>Consultas de turnos y prácticas: info.turnos@clinicaazul.com</p>
+                    <p>Agradecimientos y quejas: agradecimientosyquejas@clinicaazul.com</p>
+                    <p>Recursos Humanos: recursoshumanos@clinicaazul.com</p>
+                </div>
+                <div>
+                    <b class="destacado">Ubicación</b>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13590.380730470095!2d-61.941006228200806!3d-31.61755052866593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cae7ac9a957ee3%3A0xf942d5793291dd34!2sEsmeralda%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1664586617347!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <b class="destacado">HORARIOS DE VISITAS</b> 
+                    <p><b>Internación General:</b> 10 a 11 hs. y de 18 a 19 hs.</p>
+                    <p><b>Neonatología:</b> 11:00 a 11:30 hs. y de 16:00 a 16:30 hs</p>
+                    <p><b>Pediatría:</b> 10:30 a 11:00 hs. y de 15:30 a 16:00 hs.</p>
+                    <p><b>Terapia Intensiva:</b> 11:00 a 11:30 hs. y de 18:00 a 18:30 hs.</p>
+                    <p><b>Unidad Coronaria:</b> 12:00 a 13:00 hs. y de 19:00 a 20:00hs.</p>
+                </div>
             </div>
         </footer>
     </div>
