@@ -24,3 +24,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //document.onload(cargarContenido('./home.html'))
 
+function cargarContenidoJS(url) {
+   let contenedor = document.getElementById('principal')
+   setInnerHTML(contenedor, url);
+
+}
+
+var setInnerHTML = function(elm, html) {
+   fetch(html)
+   .then(response=> response.text())
+   .then(text=> elm.innerHTML = text)
+   //elm.innerHTML = html;
+   .then(Array.from(elm.querySelectorAll("script")).forEach( oldScript => {
+      const newScript = document.createElement("script");
+      Array.from(oldScript.attributes)
+         .forEach( attr => newScript.setAttribute(attr.name, attr.value) );
+      newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+      oldScript.parentNode.replaceChild(newScript, oldScript);
+   }));
+}
+
+ //$0.innerHTML = HTML;    // does *NOT* run <script> tags in HTML
+ //setInnerHTML($0, HTML); // does run <script> tags in HTML
+ 
