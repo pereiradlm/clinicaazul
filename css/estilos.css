@@ -21,8 +21,9 @@ body {
 
 .contenedor {
     display: grid;
-    /* Uso un atajo para definir tres filas / tres columnas */
-    grid-template: 1fr auto / 20% auto 20%; 
+    /* Uso un atajo para definir dos filas / tres columnas */
+    grid-template-columns: 20% auto 20%; 
+	grid-template-rows: auto auto;
 
     /* Distribuimos el contenido en cada fila */
     grid-template-areas:  
@@ -30,12 +31,14 @@ body {
                         "pie pie pie";
 
     /* separamos los items con gap */
-    gap: 2%;
+    gap: 1.5rem;
 
     justify-content: center;
     align-content: start;
 
     margin-top: 110px;
+	min-width: 0px;
+	min-height: 0px;
 }
 
 .izq {
@@ -189,12 +192,31 @@ img {vertical-align: middle;}
 /*----------------------------------------------------------------*/
 @media only screen and (max-width: 800px) {
     .contenedor { 
-        /* Uso un atajo para definir 4 filas / 2 columna */
+        /* Uso un atajo para definir 3 filas / 2 columna */
         grid-template: auto auto auto / 30% auto; 
 
         /* Distribuimos el contenido en cada fila */
         grid-template-areas: "izq contenido" "der der" "pie pie";
+
+		
     }
+
+	.especialidades {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1%;
+		justify-content: center;
+		row-gap: 1em;
+	}
+
+	.item-esp {
+		width: 98%;
+
+	}
+
+	.item {
+		
+	}
 }
 
 
@@ -203,12 +225,36 @@ img {vertical-align: middle;}
 /*----------------------------------------------------------------*/
 @media only screen and (max-width: 600px) {
     .contenedor {
-        /* Uso un atajo para definir 6 filas / 1 columna */
+        /* Uso un atajo para definir 4 filas / 1 columna */
         grid-template: auto auto auto auto / 100%; 
 
         /* Distribuimos el contenido en cada fila */
         grid-template-areas: "izq" "contenido" "der" "pie";
+
+		
     }
 
+	.item {
+		
+	}
+
+	.especialidades {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1%;
+		justify-content: center;
+		row-gap: 1em;
+	}
+
+	.item-esp {
+		width: 98%;
+
+	}
+
+	.tarjeta.frente img {
+		width: 45%;
+		padding-top: 1rem;
+	}
+	
 }
 
