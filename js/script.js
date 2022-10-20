@@ -1,3 +1,4 @@
+//funciones del banner - imagenes del home
 let slideIndex = 1;
 showSlides(slideIndex);
 

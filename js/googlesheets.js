@@ -1,3 +1,4 @@
+//se define el lugar de origen de los datos
 const sheetID = '1Vpgzg3fC-9sbZDV_2KyXyBVgU43JlOkxUxcyT9E8pXg';
 const base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
 const sheetName = 'especialidades';
@@ -5,12 +6,10 @@ const query = encodeURIComponent('select *');
 const url = `${base}&sheet=${sheetName}&tq=${query}`;
 const data = [];
 
-//document.addEventListener('DOMContentLoaded', init);
-
-//const output = document.querySelector('#principal');
 const output = document.getElementById('principal');
 const div = document.createElement('div');
 
+//se solicitan los datos y se pasan a json para incorporar al sitio
 function especialidades(){
     console.log('ready');
     fetch(url)
@@ -39,9 +38,14 @@ function especialidades(){
         })
 }
 
+//se generan las tarjetas por especialidad al recorrer los datos
 function maker(json){
     const div = document.createElement('div');
     div.className = "especialidades";
+    
+    let titulo = document.createElement('p');
+    titulo.innerHTML = '<b class="destacado">Especialidades</b>';
+    output.append(titulo);
     output.append(div);
 
     json.forEach((row)=>{
@@ -67,15 +71,4 @@ function maker(json){
         
         div.append(tarjeta);
     })
-
-    // json.forEach((el)=>{
-    //     console.log(el);
-    //     const keys = object.keys(el);
-    //     keys.forEach((key)=>{
-    //         const ele = document.createElement('div');
-    //         ele.textContent = el[key].v;
-    //         div.append(ele);
-    //     })
-    //     console.log(keys);
-    // })
 }
