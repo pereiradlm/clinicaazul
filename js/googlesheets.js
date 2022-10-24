@@ -58,7 +58,7 @@ function maker(json){
         esp.textContent = row['a'];
         
         const fondo = document.createElement('img');
-        fondo.src = "../img/medicina.svg";
+        fondo.src = "img/medicina.svg";
         frente.className = "tarjeta frente";
         frente.append(esp);
         frente.append(fondo);
